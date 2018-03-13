@@ -16,6 +16,6 @@ class MeasuresController < ApplicationController
   private
 
   def measure_params
-    params.require(:measures).permit(:luminosity)
+    params.require(:measures).permit(:board_id, :luminosity)
   end
 end
